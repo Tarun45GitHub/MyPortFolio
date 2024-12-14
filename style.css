@@ -289,6 +289,9 @@ nav{
     .about-right{
         width:100%
     }
+    .education{
+        font-size: 1.8rem;
+    }
 }
 /*  -----------------skills----------------------- */
 .skill{
@@ -342,10 +345,16 @@ nav{
     .skill-right{
         width:100%
     }
+    .skill-title span{
+        font-size: 1.2rem;
+    }
+    .skill-title{
+        font-size: 1rem;
+    }
 }
 /* -------------------project-------------------- */
 .project{
-    height: 120vh;
+    height: auto;
     width: 100%;
     background-color: #262525;
     display: flex;
@@ -397,6 +406,15 @@ nav{
     height: 20vh;
     width: 50%;
 }
+@media only screen and (max-width:850px){ 
+    .project{
+        height: auto;
+        row-gap: 10px;
+    }
+    .pro-container{
+        grid-template-columns: repeat(2 ,1fr);
+    }
+}
 @media only screen and (max-width:450px){
     .project{
         height: auto;
@@ -405,6 +423,9 @@ nav{
     .pro-container{
         grid-template-columns: repeat(1 ,1fr);
     }
+    .pro-content h2{
+        font-size: x-large;
+    }
 }
 /* ---------------------contact------------------ */
 @media only screen and (max-width:860px){
@@ -412,11 +433,11 @@ nav{
     flex-direction: column;
    }
    .contact{
-    gap: 0.1rem;
-   }
+    row-gap: 10px;
+}
 }
 .contact{
-    height: 90vh;
+    height: auto;
     gap: 5rem;
     background-color: #262525;
     display: flex;
